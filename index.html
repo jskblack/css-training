@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS 訓練館 - 盡情享受 CSS 選擇器的饗宴！</title>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/levels.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/restaurant.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.mCustomScrollbar.min.js"></script>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:200,400,600,400italic,600italic' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <meta property="og:url"           content="http://cssdiner.com" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="CSS 訓練館" />
+    <meta property="og:description"   content="一個有趣的手法，幫助你學習與練習 CSS 選擇器。" />
+  </head>
+
+  <body>
+    <div class="left-col">
+
+      <header>
+        CSS 訓練館
+        <div class="logo">
+          <plate><apple /></plate>
+        </div>
+      </header>
+
+      <h2 class="order"></h2>
+
+      <div class="note">
+        <h3>別擔心，你辦得到的！</h3>
+        <p>
+          你即將開始學習 CSS 選擇器！
+          選擇器是用來選取你想要套用樣式的特定元素。
+        </p>
+
+        <h4>範例 1 - 一條 CSS 規則</h4>
+
+        <pre>
+p {
+   margin-bottom: 12px;
+}</pre>
+
+        <p>
+          在這裡，"p" 是選擇器（選取所有的 &lt;p&gt; 元素）並套用下外邊距樣式。
+        </p>
+        <p>
+          要開始遊戲，請在下方的編輯器輸入 CSS 選擇器來選取桌面上正確的項目。如果你答對了，將會進入下一關。
+        </p>
+        <p>
+          將滑鼠停留在桌面上的項目，可以查看它們的 HTML 標記。
+        </p>
+        <p>
+          在右側可以獲得選擇器的說明與幫助！ &rarr;
+        </p>
+        <a class="note-toggle" href="#">好的，我懂了！</a>
+      </div>
+
+      <a class="note-toggle" href="#">救命，我卡關了！</a>
+
+      <div class="game-wrapper">
+        <div class="table-wrapper">
+          <div class="table-surface"></div>
+          <div class="nametags"></div>
+          <div class="table"></div>
+        </div>
+        <div class="table-edge">
+          <div class="table-leg"></div>
+          <div class="table-leg"></div>
+        </div>
+      </div>
+
+      <div class="editor">
+
+        <div class="editor-pane">
+          <div class="input-header">
+            <div class="file-name">style.css</div> CSS 編輯器
+          </div>
+          <div class="file-window css-view">
+            <div class="line-numbers">
+              1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20
+            </div>
+              <input class="input-strobe" type="text" placeholder="請輸入 CSS 選擇器"/><span class="plus">+</span><div class="enter-button">確認</div>
+            <div>
+            {<br/>
+            /* 樣式會套用在此處。 */<br/>
+            }
+            </div>
+            <div class="help">
+              <br/>
+              /* <br/>
+              輸入數字可直接跳轉關卡。<br/>
+              例如 &rarr; 輸入 "5" 進入第 5 關 <br/>*/
+            </div>
+          </div>
+        </div>
+
+        <div class="editor-pane html-view">
+          <div class="input-header">
+            <div class="file-name">table.html</div>
+            HTML 檢視器
+          </div>
+          <div class="file-window">
+            <div class="line-numbers">1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>19<br/>20</div>
+            <div class="markup"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what-is-this">
+        <p>
+          原版由 <a href="http://www.twitter.com/flukeout">@flukeout</a> 製作
+        </p>
+      </div>
+
+      <div class="helper"></div>
+
+    </div><div class="right-col">
+
+      <div class="help-wrapper">
+
+        <h1 class="level-header">
+          <span class="level-text"></span>
+          <span class="checkmark"></span>
+        </h1>
+
+        <div class="level-nav">
+          <a class="previous" href="#"></a>
+          <a class="next" href="#"></a>
+        </div>
+
+        <div class="level-progress"><div class="progress"></div></div>
+
+        <div class="display-help">
+          <h3 class="selector-name"></h3>
+          <h2 class="title"></h2>
+          <h3 class="syntax"></h3>
+          <div class="hint"></div>
+          <h4 class="examples-title">範例</h4>
+          <div class="examples"></div>
+          
+          <div class="parsing-section">
+            <a href="#" class="show-parsing-button">想要看解答解析嗎？</a>
+            <div class="parsing-container">
+              <h4 class="parsing-title">💡 解答解析</h4>
+              <div class="parsing-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="level-menu">
+        <h2>選擇關卡</h2>
+        <div class="levels"></div>
+        <a class="reset-progress" href="#">重置進度</a>
+      </div>
+
+      <div class="level-menu-toggle-wrapper">
+        <div class="level-menu-toggle"></div>
+      </div>
+
+    </div></body>
+</html>
